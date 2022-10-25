@@ -1,9 +1,10 @@
 import React from "react";
+import CarouselSlider from "../components/CarouselSlider";
 
 function Index () {
     return  (
         <div>
-            <h1>This is Index Page</h1>
+            <CarouselSlider />
         </div>
     )
 }

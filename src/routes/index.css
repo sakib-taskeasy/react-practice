@@ -1,0 +1,19 @@
+:root {
+  --background-color : #181828;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  background-color: var(--background-color) !important;
+  color: #fff !important;
+  text-align: center !important;
+}
