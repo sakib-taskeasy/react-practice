@@ -11,6 +11,7 @@ import Register from "../pages/register";
 import Dashboard from "../pages/dashboard";
 import ErrorPage from "../pages/404";
 import Logout from "../pages/logout";
+import Users from "../pages/users";
 
 function RouteIndex() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,6 +24,7 @@ function RouteIndex() {
                 <Route path="/register" element={<Register isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn} />} />
                 <Route path="/logout" element={<Logout/>} />
                 <Route path="/dashboard" element={<Protected isLoggedIn = {isLoggedIn}><Dashboard /></Protected>} />
+                <Route path="/users" element={<Users />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </BrowserRouter>
